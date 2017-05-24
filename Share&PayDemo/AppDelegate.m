@@ -7,12 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <UMSocialCore/UMSocialCore.h>
-#import "ZTVendorPayManager.h"
-#import <AlipaySDK/AlipaySDK.h>
-#import "WXApi.h"
-#import "ZTWXApiManager.h"
-#import "ZTVenderManagerConfig.h"
 #import "ZTVendorManager.h"
 @interface AppDelegate ()
 
