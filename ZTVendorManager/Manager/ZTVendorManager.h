@@ -27,12 +27,12 @@ typedef void (^ZTVendorShareBlock)(BOOL, NSError *);
 /**
  通用注册三方SDK方法
  */
-+ (void)registerVenderSDK;
++ (void)registerVendorSDK;
 
 /**
  仅集成支付功能调用此方法
  */
-+ (void)registerVenderSDKForPay;
++ (void)registerVendorSDKForPay;
 
 /**
  第三方授权登录

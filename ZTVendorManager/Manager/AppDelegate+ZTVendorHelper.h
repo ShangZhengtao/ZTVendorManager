@@ -1,5 +1,5 @@
 //
-//  AppDelegate+ZTVenderHelper.h
+//  AppDelegate+ZTVendorHelper.h
 //  Share&PayDemo
 //
 //  Created by apple on 2017/5/24.
@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate (ZTVenderHelper)
+@interface AppDelegate (ZTVendorHelper)
 
 
 

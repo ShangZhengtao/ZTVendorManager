@@ -1,19 +1,19 @@
 //
-//  AppDelegate+ZTVenderHelper.m
+//  AppDelegate+ZTVendorHelper.m
 //  Share&PayDemo
 //
 //  Created by apple on 2017/5/24.
 //  Copyright © 2017年 shang. All rights reserved.
 //
 
-#import "AppDelegate+ZTVenderHelper.h"
+#import "AppDelegate+ZTVendorHelper.h"
 #import "ZTVendorManager.h"
 #import <UMSocialCore/UMSocialCore.h>
 #import "WXApi.h"
 #import <AlipaySDK/AlipaySDK.h>
 #import "ZTWXApiManager.h"
 #import <objc/runtime.h>
-@implementation AppDelegate (ZTVenderHelper)
+@implementation AppDelegate (ZTVendorHelper)
 
 + (void)load{
     [super load];

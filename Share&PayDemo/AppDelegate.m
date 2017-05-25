@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [ZTVendorManager registerVenderSDK];
+    [ZTVendorManager registerVendorSDK];
     return YES;
 }
 

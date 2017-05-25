@@ -10,7 +10,7 @@
 #import "ZTVendorPayModel.h"
 #import "ZTWXApiManager.h"
 #import <AlipaySDK/AlipaySDK.h>
-#import "ZTVenderManagerConfig.h"
+#import "ZTVendorManagerConfig.h"
 
 const NSNotificationName kAlipayResultNotification = @"kAlipayResultNotification";
 

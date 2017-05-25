@@ -8,25 +8,25 @@
 
 #import "ZTVendorManager.h"
 #import <UMSocialCore/UMSocialCore.h>
-#import "ZTVenderManagerConfig.h"
+#import "ZTVendorManagerConfig.h"
 #import "WXApi.h"
 #import <AlipaySDK/AlipaySDK.h>
 
 @implementation ZTVendorManager
 
-+ (void)registerVenderSDK{
++ (void)registerVendorSDK{
     [self configSharePlatforms];
 }
 
-//+ (void)registerVenderSDKForLogin{
+//+ (void)registerVendorSDKForLogin{
 //    [self configSharePlatforms];
 //}
 //
-//+ (void)registerVenderSDKForShare {
+//+ (void)registerVendorSDKForShare {
 //    [self configSharePlatforms];
 //}
 
-+ (void)registerVenderSDKForPay {
++ (void)registerVendorSDKForPay {
     [WXApi registerApp:kWeChatAppID];
 }
 /**
@@ -131,7 +131,6 @@ completionHandler:(ZTVendorShareBlock)handler {
         // 根视图为非导航类
         currentVC = rootVC;
     }
-    
     return currentVC;
 }
 
