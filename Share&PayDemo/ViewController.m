@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.payManager = [[ZTVendorPayManager alloc]init];
-  
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -82,7 +82,7 @@
     [ZTVendorManager shareWith:ZTVendorPlatformTypeSina shareModel:model completionHandler:^(BOOL success, NSError * error) {
         
     }];
-
+    
 }
 
 //登录
@@ -90,7 +90,7 @@
     [ZTVendorManager loginWith:ZTVendorPlatformTypeQQ completionHandler:^(ZTVendorAccountModel *model, NSError *error) {
         NSLog(@"nickname:%@",model.nickname);
     }];
-
+    
 }
 
 - (IBAction)wechatLogin:(UIButton *)sender {
