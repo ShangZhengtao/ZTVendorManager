@@ -120,7 +120,7 @@ static NSString * const kWeChatStateCode = @"10017179517";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-[ZTVendorManager registerVenderSDK];
+[ZTVendorManager registerVendorSDK];
 return YES;
 }
 
@@ -132,7 +132,7 @@ return YES;
 #import "ZTVendorManager.h"
 //分享
 ZTVendorShareModel *model = [[ZTVendorShareModel alloc]init];
-[ZTVendorManager shareWith:ZTVendorPlatformTypeQQ shareModel:model completionHander:^(BOOL success, NSError * error) {
+[ZTVendorManager shareWith:ZTVendorPlatformTypeQQ shareModel:model completionHandler:^(BOOL success, NSError * error) {
 
 }];
 
@@ -140,7 +140,7 @@ ZTVendorShareModel *model = [[ZTVendorShareModel alloc]init];
 
 ```Objective-C
 //登录
-[ZTVendorManager loginWith:ZTVendorPlatformTypeQQ completionHander:^(ZTVendorAccountModel *model, NSError *error) {
+[ZTVendorManager loginWith:ZTVendorPlatformTypeQQ completionHandler:^(ZTVendorAccountModel *model, NSError *error) {
 NSLog(@"nickname:%@",model.nickname);
 }];
 
