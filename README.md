@@ -6,20 +6,23 @@
 
 - 配置项目 添加依赖库
 </br>
+
 在Other Linker Flags加入-ObjC ，注意不要写为-Objc
+</br>
+
 ![img](http://upload-images.jianshu.io/upload_images/6145764-ff3f387ca303f9a7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 添加依赖库
 
-![](http://upload-images.jianshu.io/upload_images/6145764-675298d106978052.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![img](http://upload-images.jianshu.io/upload_images/6145764-675298d106978052.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![](http://upload-images.jianshu.io/upload_images/6145764-a3956ad0528dd036.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![img](http://upload-images.jianshu.io/upload_images/6145764-a3956ad0528dd036.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 没问题的话应该能编译成功了😜
 
 - 配置Info.plist 添加下面代码  配置SSO白名单
 </br>
-```xml
+```
 <key>LSApplicationQueriesSchemes</key>
 <array>
 <string>wechat</string>
@@ -62,6 +65,7 @@
 <key>NSAllowsArbitraryLoads</key>
 <true/>
 </dict>
+
 ```
 
 - 配置第三方平台URL Scheme 
@@ -75,6 +79,7 @@
 |新浪微博|	“wb”+新浪appKey |	wb3921700954 |-- |
 
 终于配置完😆
+
 </br>
 ### 代码部分
 - 替换自己的第三方 appid  和 appkey
