@@ -75,10 +75,12 @@
 
 
 | 平台	    |  格式	|  举例	    |  备注   |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:| -----:| ----:|
 | 微信 |  微信appKey	| wxdc1e388c3822c80b |  |	
 | QQ/Qzone	|   需要添加两项URL Scheme：1、"tencent"+腾讯Q互联应用appID</br> 2、“QQ”+腾讯QQ互联应用appID转换成十六进制（足8位前面补0）| 	如appID：100424468 1、tencent100424468 2、QQ05fc5b14|	QQ05fc5b14为100424468转十六进制而来，因不足8位向前补0，然后加"QQ"前缀|
 |新浪微博|	“wb”+新浪appKey |	wb3921700954 |-- |
+
+</br>
 
 终于配置完😆
 
@@ -86,7 +88,7 @@
 ### 代码部分
 - 替换自己的第三方 appid  和 appkey
 
-```
+```Objective-C
 /UMeng https://i.umeng.com
 static NSString * const kUMAppKey = @"59126acacae7e72a4b001a1c";
 
@@ -109,7 +111,7 @@ static NSString * const kWeChatStateCode = @"10017179517";
 
 - 初始化SDK
 
-```
+```Objective-C
 #import "ZTVendorManager.h"
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -122,7 +124,7 @@ return YES;
 
 - 调用
 
-```
+```Objective-C
 #import "ZTVendorManager.h"
 //分享
 ZTVendorShareModel *model = [[ZTVendorShareModel alloc]init];
@@ -132,7 +134,7 @@ ZTVendorShareModel *model = [[ZTVendorShareModel alloc]init];
 
 ```
 
-```
+```Objective-C
 //登录
 [ZTVendorManager loginWith:ZTVendorPlatformTypeQQ completionHander:^(ZTVendorAccountModel *model, NSError *error) {
 NSLog(@"nickname:%@",model.nickname);
@@ -140,7 +142,7 @@ NSLog(@"nickname:%@",model.nickname);
 
 ```
 
-``` Objective-C
+```Objective-C
 //支付
 
 ZTVendorPayModel *model = [[ZTVendorPayModel alloc] init];
