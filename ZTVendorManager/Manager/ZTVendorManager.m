@@ -48,7 +48,7 @@
 
 
 + (void)loginWith:(ZTVendorPlatformType)platform
- completionHander:(ZTVendorLoginBlock)handler {
+ completionHandler:(ZTVendorLoginBlock)handler {
     NSInteger type = platform;
     [[UMSocialManager defaultManager] getUserInfoWithPlatform:type currentViewController:[self getCurrentVC] completion:^(id result, NSError *error) {
         
@@ -70,7 +70,7 @@
 
 + (void)shareWith:(ZTVendorPlatformType)platform
       shareModel:(ZTVendorShareModel *)model
-completionHander:(ZTVendorShareBlock)handler {
+completionHandler:(ZTVendorShareBlock)handler {
     
     NSInteger type = platform;
     UMSocialMessageObject *messageObject = [UMSocialMessageObject messageObject];

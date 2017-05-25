@@ -41,7 +41,7 @@ typedef void (^ZTVendorShareBlock)(BOOL, NSError *);
  @param handler 回调
  */
 + (void)loginWith:(ZTVendorPlatformType) platform
- completionHander:(ZTVendorLoginBlock) handler;
+ completionHandler:(ZTVendorLoginBlock) handler;
 
 /**
  社会化分享
@@ -52,6 +52,6 @@ typedef void (^ZTVendorShareBlock)(BOOL, NSError *);
  */
 + (void)shareWith:(ZTVendorPlatformType) platform
        shareModel:(ZTVendorShareModel *)model
- completionHander:(ZTVendorShareBlock) handler;
+ completionHandler:(ZTVendorShareBlock) handler;
 
 @end

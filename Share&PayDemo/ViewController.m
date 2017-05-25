@@ -66,20 +66,20 @@
 //分享
 - (IBAction)QQshareButtonTapped:(UIButton *)sender {
     ZTVendorShareModel *model = [[ZTVendorShareModel alloc]init];
-    [ZTVendorManager shareWith:ZTVendorPlatformTypeQQ shareModel:model completionHander:^(BOOL success, NSError * error) {
+    [ZTVendorManager shareWith:ZTVendorPlatformTypeQQ shareModel:model completionHandler:^(BOOL success, NSError * error) {
         
     }];
 }
 - (IBAction)wechatShareButtonTapped:(UIButton *)sender {
     ZTVendorShareModel *model = [[ZTVendorShareModel alloc]init];
-    [ZTVendorManager shareWith:ZTVendorPlatformTypeWechat shareModel:model completionHander:^(BOOL success, NSError * error) {
+    [ZTVendorManager shareWith:ZTVendorPlatformTypeWechat shareModel:model completionHandler:^(BOOL success, NSError * error) {
         
     }];
 }
 
 - (IBAction)sinaShareButtonTapped:(UIButton *)sender {
     ZTVendorShareModel *model = [[ZTVendorShareModel alloc]init];
-    [ZTVendorManager shareWith:ZTVendorPlatformTypeSina shareModel:model completionHander:^(BOOL success, NSError * error) {
+    [ZTVendorManager shareWith:ZTVendorPlatformTypeSina shareModel:model completionHandler:^(BOOL success, NSError * error) {
         
     }];
 
@@ -87,20 +87,20 @@
 
 //登录
 - (IBAction)QQloginin:(UIButton *)sender {
-    [ZTVendorManager loginWith:ZTVendorPlatformTypeQQ completionHander:^(ZTVendorAccountModel *model, NSError *error) {
+    [ZTVendorManager loginWith:ZTVendorPlatformTypeQQ completionHandler:^(ZTVendorAccountModel *model, NSError *error) {
         NSLog(@"nickname:%@",model.nickname);
     }];
 
 }
 
 - (IBAction)wechatLogin:(UIButton *)sender {
-    [ZTVendorManager loginWith:ZTVendorPlatformTypeWechat completionHander:^(ZTVendorAccountModel *model, NSError *error) {
+    [ZTVendorManager loginWith:ZTVendorPlatformTypeWechat completionHandler:^(ZTVendorAccountModel *model, NSError *error) {
         NSLog(@"nickname:%@",model.nickname);
     }];
 }
 
 - (IBAction)sinaLogin:(UIButton *)sender {
-    [ZTVendorManager loginWith:ZTVendorPlatformTypeSina completionHander:^(ZTVendorAccountModel *model, NSError *error) {
+    [ZTVendorManager loginWith:ZTVendorPlatformTypeSina completionHandler:^(ZTVendorAccountModel *model, NSError *error) {
         NSLog(@"nickname:%@",model.nickname);
     }];
 }
