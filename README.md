@@ -2,12 +2,14 @@
 基于友盟集成QQ，微信 ，微博 分享和登录功能，支付宝和微信支付功能
 
 
-###### 下载Demo 中的ZTVendorManager 文件夹 拖入项目中
+#### 下载Demo 中的ZTVendorManager 文件夹 拖入项目中
 
 - 配置项目 添加依赖库
+
 </br>
 
 在Other Linker Flags加入-ObjC ，注意不要写为-Objc
+
 </br>
 
 ![img](http://upload-images.jianshu.io/upload_images/6145764-ff3f387ca303f9a7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -15,6 +17,8 @@
 添加依赖库
 
 ![img](http://upload-images.jianshu.io/upload_images/6145764-675298d106978052.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+</br>
 
 ![img](http://upload-images.jianshu.io/upload_images/6145764-a3956ad0528dd036.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -74,8 +78,8 @@
 </br>
 
 
-| 平台	    |  格式	|  举例	    |  备注   |
-| ------------- |:-------------:| -----:| ----:|
+| 平台	    |  格式	|  举例	 |  备注 |
+|: ------ :|:-----:|:-----:|:----:|
 | 微信 |  微信appKey	| wxdc1e388c3822c80b |  |	
 | QQ/Qzone	|   需要添加两项URL Scheme：1、"tencent"+腾讯Q互联应用appID</br> 2、“QQ”+腾讯QQ互联应用appID转换成十六进制（足8位前面补0）| 	如appID：100424468 1、tencent100424468 2、QQ05fc5b14|	QQ05fc5b14为100424468转十六进制而来，因不足8位向前补0，然后加"QQ"前缀|
 |新浪微博|	“wb”+新浪appKey |	wb3921700954 |-- |
@@ -145,15 +149,14 @@ NSLog(@"nickname:%@",model.nickname);
 ```Objective-C
 //支付
 
-ZTVendorPayModel *model = [[ZTVendorPayModel alloc] init];
-//    model.aliPayOrderString = @"app_id=2016022601164789&biz_content=%7B%22body%22%3A%22Mytee%5Cu5546%5Cu57ce%5Cu5546%5Cu54c1%22%2C%22subject%22%3A%22Mytee%5Cu5546%5Cu57ce%5Cu5546%5Cu54c1%22%2C%22out_trade_no%22%3A%222017052397991011%22%2C%22total_amount%22%3A%22462.08%22%2C%22seller_id%22%3A%22apps%40yunys.com.cn%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%2C%22goods_type%22%3A1%7D&format=JSON&method=alipay.trade.app.pay&notify_url=http%3A%2F%2Ffashion.apiyys.com%2Fapi%2Fpay%2Falipay-notify&sign=ALod77e%2BlPMRGJlUQB6bLiZxop580a5SLcvIjSFMhnx%2FC4%2FfUXUv7r9seWzjgxA9lv0xwnVW2PdYzWJfKxC5uXtCIrBN4LWmuLN1dk%2FWFyRK12Krz1mPpIucHWY3GO52Ti3ixy4SvDSW%2FhlOU1ap2gNlQIbbGRJyofQu6lnjcq4%3D&sign_type=RSA&timestamp=2017-05-23+16%3A35%3A25&version=1.0";
-[self.payManager payOrderWith:0 orderModel:model payResultBlock:^(BOOL success,NSError *error) {
-if (success) {
-NSLog(@"支付成功");
-}else{
-NSLog(@"%@",error);
-}
-}];
-}
+ ZTVendorPayModel *model = [[ZTVendorPayModel alloc] init];
+    model.aliPayOrderString = @"app_id=2016022601164789&biz_content=%7B%22body%22%3A%22Mytee%5Cu5546%5Cu57ce%5Cu5546%5Cu54c1%22%2C%22subject%22%3A%22Mytee%5Cu5546%5Cu57ce%5Cu5546%5Cu54c1%22%2C%22out_trade_no%22%3A%222017052397991011%22%2C%22total_amount%22%3A%22462.08%22%2C%22seller_id%22%3A%22apps%40yunys.com.cn%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%2C%22goods_type%22%3A1%7D&format=JSON&method=alipay.trade.app.pay&notify_url=http%3A%2F%2Ffashion.apiyys.com%2Fapi%2Fpay%2Falipay-notify&sign=ALod77e%2BlPMRGJlUQB6bLiZxop580a5SLcvIjSFMhnx%2FC4%2FfUXUv7r9seWzjgxA9lv0xwnVW2PdYzWJfKxC5uXtCIrBN4LWmuLN1dk%2FWFyRK12Krz1mPpIucHWY3GO52Ti3ixy4SvDSW%2FhlOU1ap2gNlQIbbGRJyofQu6lnjcq4%3D&sign_type=RSA&timestamp=2017-05-23+16%3A35%3A25&version=1.0";
+    [self.payManager payOrderWith:0 orderModel:model payResultBlock:^(BOOL success,NSError *error) {
+        if (success) {
+            NSLog(@"支付成功");
+        }else{
+            NSLog(@"%@",error);
+        }
+    }];
 
 ```
