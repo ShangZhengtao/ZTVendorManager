@@ -22,7 +22,9 @@
 
 - 配置Info.plist 添加下面代码  配置SSO白名单
 </br>
-```
+
+```HTML
+
 <key>LSApplicationQueriesSchemes</key>
 <array>
 <string>wechat</string>
