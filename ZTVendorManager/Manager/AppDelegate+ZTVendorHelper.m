@@ -8,7 +8,7 @@
 
 #import "AppDelegate+ZTVendorHelper.h"
 #import "ZTVendorManager.h"
-#import <UMSocialCore/UMSocialCore.h>
+#import <UMShare/UMShare.h>
 #import "WXApi.h"
 #import <AlipaySDK/AlipaySDK.h>
 #import "ZTWXApiManager.h"

@@ -10,6 +10,4 @@
 
 @interface AppDelegate (ZTVendorHelper)
 
-
-
 @end

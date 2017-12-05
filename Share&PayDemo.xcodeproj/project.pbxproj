@@ -21,6 +21,9 @@
 		1893BC591ED3D06600631B55 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1893BC581ED3D06600631B55 /* CoreTelephony.framework */; };
 		1893BC5B1ED3D07600631B55 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1893BC5A1ED3D07600631B55 /* SystemConfiguration.framework */; };
 		1893BC6F1ED3D62400631B55 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1893BC6E1ED3D62400631B55 /* CoreMotion.framework */; };
+		18E89F3B1FD65B9200A77EA7 /* UMShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E89F3A1FD65B9200A77EA7 /* UMShare.framework */; };
+		18E89F3D1FD65BA000A77EA7 /* UMSocialSDKPromptResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18E89F3C1FD65BA000A77EA7 /* UMSocialSDKPromptResources.bundle */; };
+		18E89F3F1FD65D9800A77EA7 /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E89F3E1FD65D9700A77EA7 /* UMCommon.framework */; };
 		18F3F8C71ED673E20007F31E /* AppDelegate+ZTVendorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F3F89E1ED673E20007F31E /* AppDelegate+ZTVendorHelper.m */; };
 		18F3F8C81ED673E20007F31E /* ZTVendorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F3F8A01ED673E20007F31E /* ZTVendorManager.m */; };
 		18F3F8C91ED673E20007F31E /* ZTVendorPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F3F8A21ED673E20007F31E /* ZTVendorPayManager.m */; };
@@ -32,9 +35,6 @@
 		18F3F8CF1ED673E20007F31E /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F3F8AF1ED673E20007F31E /* AlipaySDK.framework */; };
 		18F3F8D01ED673E20007F31E /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F3F8B11ED673E20007F31E /* libSocialQQ.a */; };
 		18F3F8D11ED673E20007F31E /* libSocialSina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F3F8B41ED673E20007F31E /* libSocialSina.a */; };
-		18F3F8D21ED673E20007F31E /* UMSocialCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F3F8B81ED673E20007F31E /* UMSocialCore.framework */; };
-		18F3F8D31ED673E20007F31E /* UMSocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F3F8B91ED673E20007F31E /* UMSocialNetwork.framework */; };
-		18F3F8D41ED673E20007F31E /* UMSocialSDKPromptResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18F3F8BA1ED673E20007F31E /* UMSocialSDKPromptResources.bundle */; };
 		18F3F8D51ED673E20007F31E /* libUMSocialLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F3F8BC1ED673E20007F31E /* libUMSocialLog.a */; };
 		18F3F8D61ED673E20007F31E /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F3F8BE1ED673E20007F31E /* libSocialWeChat.a */; };
 		18F3F8D71ED673E20007F31E /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F3F8C11ED673E20007F31E /* libWeChatSDK.a */; };
@@ -82,6 +82,9 @@
 		1893BC581ED3D06600631B55 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		1893BC5A1ED3D07600631B55 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1893BC6E1ED3D62400631B55 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		18E89F3A1FD65B9200A77EA7 /* UMShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMShare.framework; sourceTree = "<group>"; };
+		18E89F3C1FD65BA000A77EA7 /* UMSocialSDKPromptResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKPromptResources.bundle; sourceTree = "<group>"; };
+		18E89F3E1FD65D9700A77EA7 /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
 		18F3F89D1ED673E20007F31E /* AppDelegate+ZTVendorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ZTVendorHelper.h"; sourceTree = "<group>"; };
 		18F3F89E1ED673E20007F31E /* AppDelegate+ZTVendorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ZTVendorHelper.m"; sourceTree = "<group>"; };
 		18F3F89F1ED673E20007F31E /* ZTVendorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVendorManager.h; sourceTree = "<group>"; };
@@ -102,9 +105,6 @@
 		18F3F8B21ED673E20007F31E /* UMSocialQQHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialQQHandler.h; sourceTree = "<group>"; };
 		18F3F8B41ED673E20007F31E /* libSocialSina.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSina.a; sourceTree = "<group>"; };
 		18F3F8B51ED673E20007F31E /* UMSocialSinaHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSinaHandler.h; sourceTree = "<group>"; };
-		18F3F8B81ED673E20007F31E /* UMSocialCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialCore.framework; sourceTree = "<group>"; };
-		18F3F8B91ED673E20007F31E /* UMSocialNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialNetwork.framework; sourceTree = "<group>"; };
-		18F3F8BA1ED673E20007F31E /* UMSocialSDKPromptResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKPromptResources.bundle; sourceTree = "<group>"; };
 		18F3F8BC1ED673E20007F31E /* libUMSocialLog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocialLog.a; sourceTree = "<group>"; };
 		18F3F8BE1ED673E20007F31E /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWeChat.a; sourceTree = "<group>"; };
 		18F3F8BF1ED673E20007F31E /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
@@ -122,15 +122,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F3F8D71ED673E20007F31E /* libWeChatSDK.a in Frameworks */,
-				18F3F8D21ED673E20007F31E /* UMSocialCore.framework in Frameworks */,
 				18F3F8D61ED673E20007F31E /* libSocialWeChat.a in Frameworks */,
 				18F3F8D01ED673E20007F31E /* libSocialQQ.a in Frameworks */,
+				18E89F3F1FD65D9800A77EA7 /* UMCommon.framework in Frameworks */,
 				18F3F8CF1ED673E20007F31E /* AlipaySDK.framework in Frameworks */,
+				18E89F3B1FD65B9200A77EA7 /* UMShare.framework in Frameworks */,
 				18F3F8D11ED673E20007F31E /* libSocialSina.a in Frameworks */,
 				1893BC6F1ED3D62400631B55 /* CoreMotion.framework in Frameworks */,
 				1893BC5B1ED3D07600631B55 /* SystemConfiguration.framework in Frameworks */,
 				1893BC591ED3D06600631B55 /* CoreTelephony.framework in Frameworks */,
-				18F3F8D31ED673E20007F31E /* UMSocialNetwork.framework in Frameworks */,
 				1893BC571ED3D04B00631B55 /* libz.tbd in Frameworks */,
 				18F3F8D51ED673E20007F31E /* libUMSocialLog.a in Frameworks */,
 				1893BC531ED3D00A00631B55 /* libsqlite3.tbd in Frameworks */,
@@ -323,9 +323,8 @@
 		18F3F8B71ED673E20007F31E /* UMSocialSDK */ = {
 			isa = PBXGroup;
 			children = (
-				18F3F8B81ED673E20007F31E /* UMSocialCore.framework */,
-				18F3F8B91ED673E20007F31E /* UMSocialNetwork.framework */,
-				18F3F8BA1ED673E20007F31E /* UMSocialSDKPromptResources.bundle */,
+				18E89F3E1FD65D9700A77EA7 /* UMCommon.framework */,
+				18E89F3A1FD65B9200A77EA7 /* UMShare.framework */,
 			);
 			path = UMSocialSDK;
 			sourceTree = "<group>";
@@ -333,6 +332,7 @@
 		18F3F8BB1ED673E20007F31E /* UMSocialSDKPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				18E89F3C1FD65BA000A77EA7 /* UMSocialSDKPromptResources.bundle */,
 				18F3F8BC1ED673E20007F31E /* libUMSocialLog.a */,
 			);
 			path = UMSocialSDKPlugin;
@@ -422,12 +422,12 @@
 		1893BBEC1ED3CD2100631B55 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = shang;
 				TargetAttributes = {
 					1893BBF31ED3CD2100631B55 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 28S87GSRGJ;
+						DevelopmentTeam = 9Y8B7ULTGR;
 						ProvisioningStyle = Automatic;
 					};
 					1893BC0C1ED3CD2100631B55 = {
@@ -469,8 +469,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F3F8D41ED673E20007F31E /* UMSocialSDKPromptResources.bundle in Resources */,
 				1893BC071ED3CD2100631B55 /* LaunchScreen.storyboard in Resources */,
+				18E89F3D1FD65BA000A77EA7 /* UMSocialSDKPromptResources.bundle in Resources */,
 				1893BC041ED3CD2100631B55 /* Assets.xcassets in Resources */,
 				18F3F8CE1ED673E20007F31E /* AlipaySDK.bundle in Resources */,
 				18F3F8D81ED673E20007F31E /* README.txt in Resources */,
@@ -573,7 +573,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -581,7 +583,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -621,7 +627,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -629,7 +637,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -657,7 +669,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 28S87GSRGJ;
+				DEVELOPMENT_TEAM = 9Y8B7ULTGR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZTVendorManager/VendorSDK/AlipaySDK",
@@ -684,7 +696,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 28S87GSRGJ;
+				DEVELOPMENT_TEAM = 9Y8B7ULTGR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZTVendorManager/VendorSDK/AlipaySDK",

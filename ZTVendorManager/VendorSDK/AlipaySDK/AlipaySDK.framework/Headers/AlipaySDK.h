@@ -2,16 +2,17 @@
 //  AlipaySDK.h
 //  AlipaySDK
 //
-//  Created by alipay on 16-12-12.
-//  Copyright (c) 2016年 Alipay. All rights reserved.
+//  Created by antfin on 17-10-24.
+//  Copyright (c) 2017年 AntFin. All rights reserved.
 //
 
 
 ////////////////////////////////////////////////////////
 ///////////////// 支付宝标准版本支付SDK ///////////////////
-/////////// version:15.3.3  motify:2017.03.07 ///////////
+/////////// version:15.5.0  motify:2017.10.24 ///////////
 ////////////////////////////////////////////////////////
 
+#import <UIKit/UIKit.h>
 
 #import "APayAuthInfo.h"
 typedef enum {
@@ -103,9 +104,19 @@ typedef void(^CompletionBlock)(NSDictionary *resultDic);
 //////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////h5 拦截支付入口///////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ *  从h5链接中获取订单串并支付接口（自版本15.4.0起，推荐使用该接口）
+ *
+ *  @param urlStr     拦截的 url string
+ *
+ *  @return YES为成功获取订单信息并发起支付流程；NO为无法获取订单信息，输入url是普通url
+ */
+- (BOOL)payInterceptorWithUrl:(NSString *)urlStr
+                   fromScheme:(NSString *)schemeStr
+                     callback:(CompletionBlock)completionBlock;
 
 /**
- *  从h5链接中获取订单串接口
+ *  从h5链接中获取订单串接口（自版本15.4.0起已废弃，请使用payInterceptorWithUrl...）
  *
  *  @param urlStr     拦截的 url string
  *
@@ -115,7 +126,7 @@ typedef void(^CompletionBlock)(NSDictionary *resultDic);
 
 
 /**
- *  h5链接获取到的订单串支付接口
+ *  h5链接获取到的订单串支付接口（自版本15.4.0起已废弃，请使用payInterceptorWithUrl...）
  *
  *  @param orderStr       订单信息
  *  @param schemeStr      调用支付的app注册在info.plist中的scheme
@@ -124,7 +135,6 @@ typedef void(^CompletionBlock)(NSDictionary *resultDic);
 - (void)payUrlOrder:(NSString *)orderStr
          fromScheme:(NSString *)schemeStr
            callback:(CompletionBlock)completionBlock;
-
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////授权1.0//////////////////////////////////////////////////////////////
