@@ -10,7 +10,6 @@
 #import "ZTVendorPayModel.h"
 #import "ZTWXApiManager.h"
 #import <AlipaySDK/AlipaySDK.h>
-#import "ZTVendorManagerConfig.h"
 
 const NSNotificationName kAlipayResultNotification = @"kAlipayResultNotification";
 
@@ -43,8 +42,8 @@ const NSNotificationName kAlipayResultNotification = @"kAlipayResultNotification
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kAlipayResultNotification object:nil];
 }
 
-+ (void)registerWechatApi {
-    [WXApi registerApp:kWeChatAppID];
++ (void)registerWechatApi:(NSString *)appid {
+    [WXApi registerApp:appid];
 }
 
 - (void)payOrderWith:(ZTVendorPayMethod)payMethod

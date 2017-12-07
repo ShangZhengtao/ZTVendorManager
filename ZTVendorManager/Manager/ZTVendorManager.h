@@ -25,15 +25,46 @@ typedef void (^ZTVendorShareBlock)(BOOL, NSError *);
 
 @interface ZTVendorManager : NSObject
 
-/**
- 通用注册三方SDK方法
- */
-+ (void)registerVendorSDK;
 
 /**
- 仅集成支付功能调用此方法
+ 友盟SDK 注册
+
+ @param umSocialAppkey 友盟应用Appkey
  */
-+ (void)registerVendorSDKForPay;
++ (void)setUmSocialAppkey:(NSString *)umSocialAppkey
+                  openLog:(BOOL)isLog;
+
+/**
+ 微信SDK 注册
+
+ @param appKey appKey
+ @param appSecret appSecret
+ */
++ (void)setWechatAppKey:(NSString *)appKey
+              appSecret:(NSString *)appSecret;
+
+/**
+ QQSDK 注册
+
+ @param appID appID
+ @param appKey appKey
+ */
++ (void)setQQAppID:(NSString *)appID
+            appKey:(NSString *)appKey;
+
+/**
+ 微博SDK 注册
+
+ @param appKey appKey
+ @param appSecret appSecret 
+ */
++ (void)setSinaAppKey:(NSString *)appKey
+            appSecret:(NSString *)appSecret
+          redirectURL:(NSString *)url;
+
+
+
+
 
 /**
  第三方授权登录
@@ -41,8 +72,8 @@ typedef void (^ZTVendorShareBlock)(BOOL, NSError *);
  @param platform 第三方平台
  @param handler 回调
  */
-+ (void)loginWith:(ZTVendorPlatformType) platform
- completionHandler:(ZTVendorLoginBlock) handler;
++ (void)loginWith:(ZTVendorPlatformType)platform
+ completionHandler:(ZTVendorLoginBlock)handler;
 
 /**
  社会化分享
@@ -51,8 +82,8 @@ typedef void (^ZTVendorShareBlock)(BOOL, NSError *);
  @param model 分享内容
  @param handler 回调
  */
-+ (void)shareWith:(ZTVendorPlatformType) platform
++ (void)shareWith:(ZTVendorPlatformType)platform
        shareModel:(ZTVendorShareModel *)model
- completionHandler:(ZTVendorShareBlock) handler;
+ completionHandler:(ZTVendorShareBlock)handler;
 
 @end

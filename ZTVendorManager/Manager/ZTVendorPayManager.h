@@ -23,7 +23,7 @@ typedef void(^ZTPayResultBlock)(BOOL success,NSError *);
 /**
  注册微信SDK
  */
-+ (void)registerWechatApi;
++ (void)registerWechatApi:(NSString *)appid;
 /**
  发起支付
 

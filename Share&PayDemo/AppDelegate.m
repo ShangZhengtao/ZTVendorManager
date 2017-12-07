@@ -14,11 +14,18 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+        
+    [self registerVendorSDK];
     
-    [ZTVendorManager registerVendorSDK];
     return YES;
+}
+
+- (void)registerVendorSDK {
+    [ZTVendorManager setUmSocialAppkey:kUMAppKey openLog:YES];
+    [ZTVendorManager setWechatAppKey:kWeChatAppID appSecret:kWeChatAppSecret];
+    [ZTVendorManager setQQAppID:kTencentQQAppID appKey:kTencentQQAppKey];
+    [ZTVendorManager setSinaAppKey:kTencentQQAppID appSecret:kTencentQQAppKey redirectURL:kSinaRedirectURL];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

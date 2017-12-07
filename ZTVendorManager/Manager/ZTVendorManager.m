@@ -8,47 +8,33 @@
 
 #import "ZTVendorManager.h"
 #import <UMShare/UMShare.h>
-#import "ZTVendorManagerConfig.h"
 #import "WXApi.h"
 #import <AlipaySDK/AlipaySDK.h>
 
 @implementation ZTVendorManager
 
-+ (void)registerVendorSDK{
-    [self configSharePlatforms];
++ (void)setUmSocialAppkey:(NSString *)umSocialAppkey openLog:(BOOL)isLog {
+    
+    [[UMSocialManager defaultManager] openLog:isLog];
+    [[UMSocialManager defaultManager] setUmSocialAppkey:umSocialAppkey];
+    NSString *alipayVersion = [[AlipaySDK defaultService] currentVersion];
+    UMSocialLogInfo(@"支付宝SDK：%@",alipayVersion);
 }
 
-//+ (void)registerVendorSDKForLogin{
-//    [self configSharePlatforms];
-//}
-//
-//+ (void)registerVendorSDKForShare {
-//    [self configSharePlatforms];
-//}
-
-+ (void)registerVendorSDKForPay {
-    [WXApi registerApp:kWeChatAppID];
-}
-/**
- 设置分享平台appkey
- */
-+ (void)configSharePlatforms
-{
-    /* 打开调试日志 */
-    [[UMSocialManager defaultManager] openLog:NO];
-    /* 设置友盟appkey */
-    [[UMSocialManager defaultManager] setUmSocialAppkey:kUMAppKey];
-    // 微信
-    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:kWeChatAppID appSecret:kWeChatAppSecret redirectURL:@""];
-    // QQ
-    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_QQ appKey:kTencentQQAppID appSecret:kTencentQQAppKey redirectURL:@""];
-    // 微博
-    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey:kSinaAppKey  appSecret:kSinaAppSecret redirectURL:kSinaRedirectURL];
++ (void)setWechatAppKey:(NSString *)appKey appSecret:(NSString *)appSecret {
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:appKey appSecret:appSecret redirectURL:@""];
 }
 
++ (void)setQQAppID:(NSString *)appID appKey:(NSString *)appKey {
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_QQ appKey:appID appSecret:appKey redirectURL:@""];
+}
+
++ (void)setSinaAppKey:(NSString *)appKey appSecret:(NSString *)appSecret redirectURL:(NSString *)url {
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey:appKey  appSecret:appSecret redirectURL:url];
+}
 
 + (void)loginWith:(ZTVendorPlatformType)platform
- completionHandler:(ZTVendorLoginBlock)handler {
+completionHandler:(ZTVendorLoginBlock)handler {
     NSInteger type = platform;
     [[UMSocialManager defaultManager] getUserInfoWithPlatform:type currentViewController:[self getCurrentVC] completion:^(id result, NSError *error) {
         
@@ -69,7 +55,7 @@
 }
 
 + (void)shareWith:(ZTVendorPlatformType)platform
-      shareModel:(ZTVendorShareModel *)model
+       shareModel:(ZTVendorShareModel *)model
 completionHandler:(ZTVendorShareBlock)handler {
     
     NSInteger type = platform;
@@ -91,7 +77,7 @@ completionHandler:(ZTVendorShareBlock)handler {
                 UMSocialLogInfo(@"response message is %@",resp.message);
                 //第三方原始返回的数据
                 UMSocialLogInfo(@"response originalResponse data is %@",resp.originalResponse);
-               
+                
             }else{
                 UMSocialLogInfo(@"response data is %@",data);
             }
