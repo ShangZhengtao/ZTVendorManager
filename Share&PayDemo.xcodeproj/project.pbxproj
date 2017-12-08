@@ -37,7 +37,6 @@
 		18F3F8D51ED673E20007F31E /* libUMSocialLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F3F8BC1ED673E20007F31E /* libUMSocialLog.a */; };
 		18F3F8D61ED673E20007F31E /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F3F8BE1ED673E20007F31E /* libSocialWeChat.a */; };
 		18F3F8D71ED673E20007F31E /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F3F8C11ED673E20007F31E /* libWeChatSDK.a */; };
-		18F3F8D81ED673E20007F31E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18F3F8C21ED673E20007F31E /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,7 +107,6 @@
 		18F3F8BE1ED673E20007F31E /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWeChat.a; sourceTree = "<group>"; };
 		18F3F8BF1ED673E20007F31E /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
 		18F3F8C11ED673E20007F31E /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		18F3F8C21ED673E20007F31E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		18F3F8C31ED673E20007F31E /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		18F3F8C41ED673E20007F31E /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		18F3F8C51ED673E20007F31E /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
@@ -348,7 +346,6 @@
 			isa = PBXGroup;
 			children = (
 				18F3F8C11ED673E20007F31E /* libWeChatSDK.a */,
-				18F3F8C21ED673E20007F31E /* README.txt */,
 				18F3F8C31ED673E20007F31E /* WechatAuthSDK.h */,
 				18F3F8C41ED673E20007F31E /* WXApi.h */,
 				18F3F8C51ED673E20007F31E /* WXApiObject.h */,
@@ -469,7 +466,6 @@
 				18E89F3D1FD65BA000A77EA7 /* UMSocialSDKPromptResources.bundle in Resources */,
 				1893BC041ED3CD2100631B55 /* Assets.xcassets in Resources */,
 				18F3F8CE1ED673E20007F31E /* AlipaySDK.bundle in Resources */,
-				18F3F8D81ED673E20007F31E /* README.txt in Resources */,
 				1893BC021ED3CD2100631B55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

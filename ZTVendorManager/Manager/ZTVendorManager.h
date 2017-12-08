@@ -4,7 +4,7 @@
 //
 //  Created by apple on 2017/5/23.
 //  Copyright © 2017年 shang. All rights reserved.
-//
+//  https://github.com/ShangZhengtao/ZTVendorManager.git
 
 #import <Foundation/Foundation.h>
 #import "ZTVendorShareModel.h"
