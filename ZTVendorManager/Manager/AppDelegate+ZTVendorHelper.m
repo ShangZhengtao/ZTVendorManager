@@ -13,6 +13,14 @@
 #import <AlipaySDK/AlipaySDK.h>
 #import "ZTWXApiManager.h"
 #import <objc/runtime.h>
+
+#if __has_include("AppDelegate.h")
+#else
+@implementation AppDelegate
+
+@end
+#endif
+
 @implementation AppDelegate (ZTVendorHelper)
 
 + (void)load{

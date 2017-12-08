@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1867131C1FDA2DC700175546 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867131B1FDA2DC700175546 /* AppDelegate.m */; };
 		1893BBF91ED3CD2100631B55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893BBF81ED3CD2100631B55 /* main.m */; };
-		1893BBFC1ED3CD2100631B55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893BBFB1ED3CD2100631B55 /* AppDelegate.m */; };
 		1893BBFF1ED3CD2100631B55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893BBFE1ED3CD2100631B55 /* ViewController.m */; };
 		1893BC021ED3CD2100631B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1893BC001ED3CD2100631B55 /* Main.storyboard */; };
 		1893BC041ED3CD2100631B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1893BC031ED3CD2100631B55 /* Assets.xcassets */; };
@@ -58,10 +58,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1867131A1FDA2DC700175546 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1867131B1FDA2DC700175546 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1893BBF41ED3CD2100631B55 /* Share&PayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Share&PayDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1893BBF81ED3CD2100631B55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1893BBFA1ED3CD2100631B55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1893BBFB1ED3CD2100631B55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1893BBFD1ED3CD2100631B55 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1893BBFE1ED3CD2100631B55 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1893BC011ED3CD2100631B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -177,8 +177,8 @@
 		1893BBF61ED3CD2100631B55 /* Share&PayDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1893BBFA1ED3CD2100631B55 /* AppDelegate.h */,
-				1893BBFB1ED3CD2100631B55 /* AppDelegate.m */,
+				1867131A1FDA2DC700175546 /* AppDelegate.h */,
+				1867131B1FDA2DC700175546 /* AppDelegate.m */,
 				1893BBFD1ED3CD2100631B55 /* ViewController.h */,
 				1893BBFE1ED3CD2100631B55 /* ViewController.m */,
 				1893BC001ED3CD2100631B55 /* Main.storyboard */,
@@ -499,7 +499,7 @@
 				18F3F8CD1ED673E20007F31E /* ZTVendorShareModel.m in Sources */,
 				18F3F8C91ED673E20007F31E /* ZTVendorPayManager.m in Sources */,
 				1893BBFF1ED3CD2100631B55 /* ViewController.m in Sources */,
-				1893BBFC1ED3CD2100631B55 /* AppDelegate.m in Sources */,
+				1867131C1FDA2DC700175546 /* AppDelegate.m in Sources */,
 				18F3F8CB1ED673E20007F31E /* ZTVendorAccountModel.m in Sources */,
 				18F3F8C81ED673E20007F31E /* ZTVendorManager.m in Sources */,
 				18F3F8C71ED673E20007F31E /* AppDelegate+ZTVendorHelper.m in Sources */,
