@@ -5,7 +5,8 @@ s.name             = "ZTVendorManager"
 s.version          = "1.0.1"
 s.summary          = "QQ,微信,微博分享&登录；微信支付，支付宝支付 只需一行代码。"
 s.description      = <<-DESC
-QQ,微信,微博分享&登录；微信支付，支付宝支付。
+QQ,微信,微博分享&登录；微信支付，支付宝支付,只需一行代码。
+QQ, WeChat, Weibo share & login; WeChat payment, Alipay payment, just a line of code.
 
 DESC
 s.homepage         = "https://github.com/ShangZhengtao/ZTVendorManager"
@@ -18,7 +19,7 @@ s.source           = { :git => "https://github.com/ShangZhengtao/ZTVendorManager
 s.platform     = :ios, '9.0'
 s.requires_arc = true
 
-s.source_files = 'ZTVendorManager/*'
+s.source_files = 'ZTVendorManager/**/*.{h,m}'
 
 
 s.compiler_flags    = '-ObjC'
