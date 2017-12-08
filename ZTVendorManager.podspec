@@ -5,7 +5,7 @@ s.name             = "ZTVendorManager"
 s.version          = "1.0.1"
 s.summary          = "QQ,微信,微博分享&登录；微信支付，支付宝支付 只需一行代码。"
 s.description      = <<-DESC
-QQ,微信,微博分享&登录；微信支付，支付宝支付 只需一行代码。
+QQ,微信,微博分享&登录；微信支付，支付宝支付。
 
 DESC
 s.homepage         = "https://github.com/ShangZhengtao/ZTVendorManager"
@@ -22,7 +22,7 @@ s.source_files = 'ZTVendorManager/*'
 
 
 s.compiler_flags    = '-ObjC'
-s.libraries         = 'libc++', 'libsqlite3', 'libz'
+s.libraries         = 'c++', 'sqlite3', 'z'
 s.frameworks        = 'CoreTelephony', 'CoreMotion'
 s.vendored_libraries    = 'ZTVendorManager/VendorSDK/UMSocial/UMSocialSDKPlugin/libUMSocialLog.a', 'ZTVendorManager/VendorSDK/QQ/libSocialQQ.a', 'ZTVendorManager/VendorSDK/Sina/libSocialSina.a', 'ZTVendorManager/VendorSDK/WeChat/libSocialWeChat.a', 'ZTVendorManager/VendorSDK/WeChat/WechatSDK/libWeChatSDK.a'
 s.vendored_frameworks   = 'ZTVendorManager/VendorSDK/AlipaySDK/AlipaySDK.framework', 'ZTVendorManager/VendorSDK/UMSocial/UMSocialSDK/UMCommon.framework', 'ZTVendorManager/VendorSDK/UMSocial/UMSocialSDK/UMShare.framework'
