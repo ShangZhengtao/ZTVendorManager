@@ -19,7 +19,7 @@ s.source           = { :git => "https://github.com/ShangZhengtao/ZTVendorManager
 s.platform     = :ios, '9.0'
 s.requires_arc = true
 
-s.source_files = 'ZTVendorManager/**/*.{h,m}'
+s.source_files = 'ZTVendorManager/**/*.*'
 
 
 s.compiler_flags    = '-ObjC'
@@ -31,5 +31,9 @@ s.vendored_frameworks   = 'ZTVendorManager/VendorSDK/AlipaySDK/AlipaySDK.framewo
 s.resources             = ['ZTVendorManager/VendorSDK/AlipaySDK/AlipaySDK.bundle', 'ZTVendorManager/VendorSDK/UMSocial/UMSocialSDKPlugin/UMSocialSDKPromptResources.bundle']
 ##第三方pod
 #s.dependency 'FMDB', '~> 2.5'
+
+
+# 验证
+# pod lib lint  --use-libraries --allow-warnings --verbose
 
 end

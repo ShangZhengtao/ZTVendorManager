@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1867131C1FDA2DC700175546 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867131B1FDA2DC700175546 /* AppDelegate.m */; };
+		1867133F1FDA527400175546 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867131B1FDA2DC700175546 /* AppDelegate.m */; };
 		1893BBF91ED3CD2100631B55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893BBF81ED3CD2100631B55 /* main.m */; };
 		1893BBFF1ED3CD2100631B55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893BBFE1ED3CD2100631B55 /* ViewController.m */; };
 		1893BC021ED3CD2100631B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1893BC001ED3CD2100631B55 /* Main.storyboard */; };
@@ -499,7 +499,7 @@
 				18F3F8CD1ED673E20007F31E /* ZTVendorShareModel.m in Sources */,
 				18F3F8C91ED673E20007F31E /* ZTVendorPayManager.m in Sources */,
 				1893BBFF1ED3CD2100631B55 /* ViewController.m in Sources */,
-				1867131C1FDA2DC700175546 /* AppDelegate.m in Sources */,
+				1867133F1FDA527400175546 /* AppDelegate.m in Sources */,
 				18F3F8CB1ED673E20007F31E /* ZTVendorAccountModel.m in Sources */,
 				18F3F8C81ED673E20007F31E /* ZTVendorManager.m in Sources */,
 				18F3F8C71ED673E20007F31E /* AppDelegate+ZTVendorHelper.m in Sources */,

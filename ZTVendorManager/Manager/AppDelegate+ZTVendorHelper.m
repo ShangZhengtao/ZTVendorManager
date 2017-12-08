@@ -14,16 +14,19 @@
 #import "ZTWXApiManager.h"
 #import <objc/runtime.h>
 
-#if __has_include("AppDelegate.h")
+#if __has_include("AppDelegate.h") || __has_include("ZTVendorManager-prefix.pch")
 #else
 @implementation AppDelegate
 
 @end
 #endif
 
+
+
 @implementation AppDelegate (ZTVendorHelper)
 
 + (void)load{
+    
     [super load];
     [self swizzleMethod:self originmethod:@selector(application:openURL:options:) newMethod:@selector(myApplication:openURL:options:)];
     [self swizzleMethod:self originmethod:@selector(application:openURL:sourceApplication:annotation:) newMethod:@selector(myApplication:openURL:sourceApplication:annotation:)];
