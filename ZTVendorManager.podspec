@@ -19,7 +19,7 @@ s.source           = { :git => "https://github.com/ShangZhengtao/ZTVendorManager
 s.platform     = :ios, '9.0'
 s.requires_arc = true
 
-s.source_files = 'ZTVendorManager/**/*.*'
+s.source_files = 'ZTVendorManager/**/*.{h,m}'
 
 
 s.compiler_flags    = '-ObjC'
@@ -27,6 +27,8 @@ s.libraries         = 'c++', 'sqlite3', 'z'
 s.frameworks        = 'CoreTelephony', 'CoreMotion'
 s.vendored_libraries    = 'ZTVendorManager/VendorSDK/UMSocial/UMSocialSDKPlugin/libUMSocialLog.a', 'ZTVendorManager/VendorSDK/QQ/libSocialQQ.a', 'ZTVendorManager/VendorSDK/Sina/libSocialSina.a', 'ZTVendorManager/VendorSDK/WeChat/libSocialWeChat.a', 'ZTVendorManager/VendorSDK/WeChat/WechatSDK/libWeChatSDK.a'
 s.vendored_frameworks   = 'ZTVendorManager/VendorSDK/AlipaySDK/AlipaySDK.framework', 'ZTVendorManager/VendorSDK/UMSocial/UMSocialSDK/UMCommon.framework', 'ZTVendorManager/VendorSDK/UMSocial/UMSocialSDK/UMShare.framework'
+
+s.prefix_header_contents = '#import <UIKit/UIKit.h>'
 ##资源
 s.resources             = ['ZTVendorManager/VendorSDK/AlipaySDK/AlipaySDK.bundle', 'ZTVendorManager/VendorSDK/UMSocial/UMSocialSDKPlugin/UMSocialSDKPromptResources.bundle']
 ##第三方pod

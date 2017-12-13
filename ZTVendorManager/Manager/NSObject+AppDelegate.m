@@ -1,12 +1,11 @@
 //
-//  AppDelegate+ZTVendorHelper.m
+//  NSObject+AppDelegate.m
 //  Share&PayDemo
 //
-//  Created by apple on 2017/5/24.
-//  Copyright © 2017年 shang. All rights reserved.
+//  Created by apple on 2017/12/12.
 //
 
-#import "AppDelegate+ZTVendorHelper.h"
+#import "NSObject+AppDelegate.h"
 #import "ZTVendorManager.h"
 #import <UMShare/UMShare.h>
 #import "WXApi.h"
@@ -14,27 +13,12 @@
 #import "ZTWXApiManager.h"
 #import <objc/runtime.h>
 
-#if __has_include("AppDelegate.h")
-
-#else
-
-#if __has_include("ZTVendorManager-prefix.pch")
-@implementation AppDelegate
-
-@end
-#endif
-@implementation AppDelegate
-
-@end
-#endif
-
-@implementation AppDelegate (ZTVendorHelper)
+@implementation NSObject (AppDelegate)
 
 + (void)load{
-    
-    [super load];
-    [self swizzleMethod:self originmethod:@selector(application:openURL:options:) newMethod:@selector(myApplication:openURL:options:)];
-    [self swizzleMethod:self originmethod:@selector(application:openURL:sourceApplication:annotation:) newMethod:@selector(myApplication:openURL:sourceApplication:annotation:)];
+    Class appDelegate = NSClassFromString(@"AppDelegate");
+    [self swizzleMethod:appDelegate originmethod:@selector(application:openURL:options:) newMethod:@selector(myApplication:openURL:options:)];
+    [self swizzleMethod:appDelegate originmethod:@selector(application:openURL:sourceApplication:annotation:) newMethod:@selector(myApplication:openURL:sourceApplication:annotation:)];
 }
 
 + (void)swizzleMethod:(Class)targetClass originmethod:(SEL) origin newMethod:(SEL) new{
@@ -94,6 +78,5 @@
     BOOL other = [self myApplication:app openURL:url options:options];
     return  wecharResult || shareResult || other;
 }
-
 
 @end

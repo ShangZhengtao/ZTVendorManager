@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1867133F1FDA527400175546 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867131B1FDA2DC700175546 /* AppDelegate.m */; };
 		1893BBF91ED3CD2100631B55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893BBF81ED3CD2100631B55 /* main.m */; };
 		1893BBFF1ED3CD2100631B55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893BBFE1ED3CD2100631B55 /* ViewController.m */; };
 		1893BC021ED3CD2100631B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1893BC001ED3CD2100631B55 /* Main.storyboard */; };
@@ -15,6 +14,8 @@
 		1893BC071ED3CD2100631B55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1893BC051ED3CD2100631B55 /* LaunchScreen.storyboard */; };
 		1893BC121ED3CD2100631B55 /* Share_PayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893BC111ED3CD2100631B55 /* Share_PayDemoTests.m */; };
 		1893BC1D1ED3CD2100631B55 /* Share_PayDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893BC1C1ED3CD2100631B55 /* Share_PayDemoUITests.m */; };
+		18BFCDB91FE0BF3700E98B15 /* NSObject+AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFCDB81FE0BF3700E98B15 /* NSObject+AppDelegate.m */; };
+		18BFCDBC1FE0BF5900E98B15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFCDBB1FE0BF5900E98B15 /* AppDelegate.m */; };
 		18CE7E121FD9314D001880D5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1893BC6E1ED3D62400631B55 /* CoreMotion.framework */; };
 		18CE7E141FD931AA001880D5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1893BC581ED3D06600631B55 /* CoreTelephony.framework */; };
 		18CE7E151FD931C7001880D5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1893BC561ED3D04B00631B55 /* libz.tbd */; };
@@ -23,7 +24,6 @@
 		18E89F3B1FD65B9200A77EA7 /* UMShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E89F3A1FD65B9200A77EA7 /* UMShare.framework */; };
 		18E89F3D1FD65BA000A77EA7 /* UMSocialSDKPromptResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18E89F3C1FD65BA000A77EA7 /* UMSocialSDKPromptResources.bundle */; };
 		18E89F3F1FD65D9800A77EA7 /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E89F3E1FD65D9700A77EA7 /* UMCommon.framework */; };
-		18F3F8C71ED673E20007F31E /* AppDelegate+ZTVendorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F3F89E1ED673E20007F31E /* AppDelegate+ZTVendorHelper.m */; };
 		18F3F8C81ED673E20007F31E /* ZTVendorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F3F8A01ED673E20007F31E /* ZTVendorManager.m */; };
 		18F3F8C91ED673E20007F31E /* ZTVendorPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F3F8A21ED673E20007F31E /* ZTVendorPayManager.m */; };
 		18F3F8CA1ED673E20007F31E /* ZTWXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F3F8A41ED673E20007F31E /* ZTWXApiManager.m */; };
@@ -57,8 +57,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1867131A1FDA2DC700175546 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1867131B1FDA2DC700175546 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1893BBF41ED3CD2100631B55 /* Share&PayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Share&PayDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1893BBF81ED3CD2100631B55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1893BBFD1ED3CD2100631B55 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -80,11 +78,13 @@
 		1893BC581ED3D06600631B55 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		1893BC5A1ED3D07600631B55 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1893BC6E1ED3D62400631B55 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		18BFCDB71FE0BF3700E98B15 /* NSObject+AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+AppDelegate.h"; sourceTree = "<group>"; };
+		18BFCDB81FE0BF3700E98B15 /* NSObject+AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AppDelegate.m"; sourceTree = "<group>"; };
+		18BFCDBA1FE0BF5900E98B15 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18BFCDBB1FE0BF5900E98B15 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18E89F3A1FD65B9200A77EA7 /* UMShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMShare.framework; sourceTree = "<group>"; };
 		18E89F3C1FD65BA000A77EA7 /* UMSocialSDKPromptResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKPromptResources.bundle; sourceTree = "<group>"; };
 		18E89F3E1FD65D9700A77EA7 /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
-		18F3F89D1ED673E20007F31E /* AppDelegate+ZTVendorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ZTVendorHelper.h"; sourceTree = "<group>"; };
-		18F3F89E1ED673E20007F31E /* AppDelegate+ZTVendorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ZTVendorHelper.m"; sourceTree = "<group>"; };
 		18F3F89F1ED673E20007F31E /* ZTVendorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVendorManager.h; sourceTree = "<group>"; };
 		18F3F8A01ED673E20007F31E /* ZTVendorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVendorManager.m; sourceTree = "<group>"; };
 		18F3F8A11ED673E20007F31E /* ZTVendorPayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVendorPayManager.h; sourceTree = "<group>"; };
@@ -175,8 +175,8 @@
 		1893BBF61ED3CD2100631B55 /* Share&PayDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1867131A1FDA2DC700175546 /* AppDelegate.h */,
-				1867131B1FDA2DC700175546 /* AppDelegate.m */,
+				18BFCDBA1FE0BF5900E98B15 /* AppDelegate.h */,
+				18BFCDBB1FE0BF5900E98B15 /* AppDelegate.m */,
 				1893BBFD1ED3CD2100631B55 /* ViewController.h */,
 				1893BBFE1ED3CD2100631B55 /* ViewController.m */,
 				1893BC001ED3CD2100631B55 /* Main.storyboard */,
@@ -241,8 +241,8 @@
 		18F3F89C1ED673E20007F31E /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				18F3F89D1ED673E20007F31E /* AppDelegate+ZTVendorHelper.h */,
-				18F3F89E1ED673E20007F31E /* AppDelegate+ZTVendorHelper.m */,
+				18BFCDB71FE0BF3700E98B15 /* NSObject+AppDelegate.h */,
+				18BFCDB81FE0BF3700E98B15 /* NSObject+AppDelegate.m */,
 				18F3F89F1ED673E20007F31E /* ZTVendorManager.h */,
 				18F3F8A01ED673E20007F31E /* ZTVendorManager.m */,
 				18F3F8A11ED673E20007F31E /* ZTVendorPayManager.h */,
@@ -495,11 +495,11 @@
 				18F3F8CD1ED673E20007F31E /* ZTVendorShareModel.m in Sources */,
 				18F3F8C91ED673E20007F31E /* ZTVendorPayManager.m in Sources */,
 				1893BBFF1ED3CD2100631B55 /* ViewController.m in Sources */,
-				1867133F1FDA527400175546 /* AppDelegate.m in Sources */,
+				18BFCDBC1FE0BF5900E98B15 /* AppDelegate.m in Sources */,
 				18F3F8CB1ED673E20007F31E /* ZTVendorAccountModel.m in Sources */,
 				18F3F8C81ED673E20007F31E /* ZTVendorManager.m in Sources */,
-				18F3F8C71ED673E20007F31E /* AppDelegate+ZTVendorHelper.m in Sources */,
 				18F3F8CA1ED673E20007F31E /* ZTWXApiManager.m in Sources */,
+				18BFCDB91FE0BF3700E98B15 /* NSObject+AppDelegate.m in Sources */,
 				1893BBF91ED3CD2100631B55 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
