@@ -1,6 +1,9 @@
 # ZTVendorManager
+[![Build Status](https://travis-ci.org/devxoul/UITextView-Placeholder.svg?branch=master)]()
+[![License](https://img.shields.io/cocoapods/l/ImagePicker.svg?style=flat)]()
+![](https://img.shields.io/badge/support-iOS%209.0%2B-green.svg)
 
-基于友盟集成QQ，微信 ，微博 分享和登录功能，支付宝和微信支付功能
+基于友盟集成QQ，微信 ，微博 分享和登录功能，支付宝和微信支付功能 不包含IDFA， 适配iPhone X，兼容iOS11
 
 ## Requirements
 
@@ -12,15 +15,16 @@
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
-
 target 'TargetName' do
+
 pod 'ZTVendorManager'
+
 end
 
 ```
 ## Usage
 
-###1.配置SSO白名单，在Info.plist中添加下面代码  
+### 1.配置SSO白名单，在Info.plist中添加下面代码
 
 ```HTML
 
@@ -69,7 +73,7 @@ end
 
 ```
 
-###2.配置第三方平台URL Scheme 
+### 2.配置第三方平台URL Scheme
 
 | 平台	 |  格式	|  举例	 |  备注 |
 |:-----:|:-----:|:-----:|:----:|
@@ -77,7 +81,7 @@ end
 | QQ/Qzone	|   需要添加两项URL Scheme：1、"tencent"+腾讯Q互联应用appID</br>2、“QQ”+腾讯QQ互联应用appID转换成十六进制（足8位前面补0）| 	如appID：100424468 </br> 1、tencent100424468</br> 2、QQ05fc5b14|	QQ05fc5b14为100424468转十六进制而来，因不足8位向前补0，然后加"QQ"前缀|
 |新浪微博|	“wb”+新浪appKey |	wb3921700954 | -- |
 
-###3.注册SDK
+### 3.注册SDK
 
 - 初始化SDK
 
@@ -132,3 +136,14 @@ NSLog(@"nickname:%@",model.nickname);
     }];
 
 ```
+## 你的star是我持续更新的动力!
+
+### CocoaPods更新日志
+
+##### 2017.12.13 (tag:1.0.2):
+
+- 不包含IDFA(identifier for advertising)
+- iPhone X适配
+- 兼容iOS11
+- 更新友盟v6.8.0
+- 更新支付宝SDK：15.5.0
