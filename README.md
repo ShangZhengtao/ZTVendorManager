@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/cocoapods/l/ImagePicker.svg?style=flat)]()
 ![](https://img.shields.io/badge/support-iOS%209.0%2B-green.svg)
 
-基于友盟集成QQ，微信 ，微博 分享和登录功能，支付宝和微信支付功能 不包含IDFA， 适配iPhone X，兼容iOS11
+基于友盟集成QQ，微信 ，微博 分享和登录功能，支付宝和微信支付功能。不包含IDFA，已经适配iPhone X，兼容iOS11
 
 ## Requirements
 
