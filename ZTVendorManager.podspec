@@ -37,5 +37,6 @@ s.resources             = ['ZTVendorManager/VendorSDK/AlipaySDK/AlipaySDK.bundle
 
 # 验证
 # pod lib lint  --use-libraries --allow-warnings --verbose
-
+# 发布
+# pod trunk push ZTVendorManager.podspec --use-libraries
 end
