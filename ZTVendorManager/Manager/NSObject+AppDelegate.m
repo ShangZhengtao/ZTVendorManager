@@ -23,7 +23,7 @@
 
 + (void)swizzleMethod:(Class)targetClass originmethod:(SEL) origin newMethod:(SEL) new{
     Method originMethod =  class_getInstanceMethod(targetClass, origin);
-    Method newMethod = class_getInstanceMethod(targetClass, new);
+    Method newMethod = class_getInstanceMethod([NSObject class], new);
     //已经存在返回NO 添加成功返回 YES
     BOOL hasAdd = class_addMethod(targetClass, origin, method_getImplementation(newMethod), method_getTypeEncoding(newMethod));
     if (hasAdd) {

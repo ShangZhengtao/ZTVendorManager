@@ -74,7 +74,10 @@ const NSNotificationName kAlipayResultNotification = @"kAlipayResultNotification
             NSError *error = nil;
             BOOL success = response.errCode == WXSuccess;
             if (!success) {
-                NSDictionary *userInfo = @{@"errorInfo": response.errStr};
+                NSDictionary *userInfo = @{};
+                if ( response.errStr.length != 0) {
+                    userInfo = @{@"errorInfo": response.errStr};
+                }
                 error = [[NSError alloc]initWithDomain:NSCocoaErrorDomain code:response.errCode userInfo:userInfo];
             }
             !handler ?: handler (success,error);
