@@ -85,7 +85,7 @@ const NSNotificationName kAlipayResultNotification = @"kAlipayResultNotification
     }
 }
 
-- (void)wechatWith:(ZTVendorPayModel *)model{
+- (void)wechatWith:(ZTVendorPayModel *)model {
     PayReq *request = [[PayReq alloc] init];
     request.partnerId = model.partnerId;
     request.openID = model.appid;
@@ -98,7 +98,7 @@ const NSNotificationName kAlipayResultNotification = @"kAlipayResultNotification
 }
 
 //支付宝钱包通知回调
-- (void)alipayOrderProcessOrder:(NSNotification *)notification{
+- (void)alipayOrderProcessOrder:(NSNotification *)notification {
     NSDictionary *resultDic = notification.userInfo;
     NSError *error;
     NSString *code = @"500";
@@ -115,8 +115,7 @@ const NSNotificationName kAlipayResultNotification = @"kAlipayResultNotification
     [self payCallbackState:success];
 }
 
-
-- (void)payCallbackState:(BOOL)success{
+- (void)payCallbackState:(BOOL)success {
     if (success) {
         NSLog(@"支付成功,等待订单确认");
     }else{
