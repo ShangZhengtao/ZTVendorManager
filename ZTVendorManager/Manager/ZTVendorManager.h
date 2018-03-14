@@ -13,11 +13,11 @@
 #import "ZTVendorPayManager.h"
 typedef NS_ENUM(NSInteger,ZTVendorPlatformType)
 {
-    ZTVendorPlatformTypeSina = 0,
-    ZTVendorPlatformTypeWechat = 1,
-    ZTVendorPlatformTypeWechatFriends = 2,
-    ZTVendorPlatformTypeQQ = 4,
-    ZTVendorPlatformTypeQzone = 5
+    ZTVendorPlatformTypeSina            = 0,
+    ZTVendorPlatformTypeWechat          = 1,
+    ZTVendorPlatformTypeWechatFriends   = 2,
+    ZTVendorPlatformTypeQQ              = 4,
+    ZTVendorPlatformTypeQzone           = 5
 };
 
 typedef void (^ZTVendorLoginBlock)(ZTVendorAccountModel *, NSError *);
