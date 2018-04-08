@@ -64,7 +64,7 @@ const NSNotificationName kAlipayResultNotification = @"kAlipayResultNotification
                 !handler ?: handler(success,error);
                 [weakSelf payCallbackState:success];
             }else { //钱包回调
-                _payResultBlock = handler;
+                self.payResultBlock = handler;
             }
             
         }];
