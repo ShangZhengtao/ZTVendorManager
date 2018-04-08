@@ -2,7 +2,7 @@
 #https://guides.cocoapods.org/syntax/podspec.html#specification
 Pod::Spec.new do |s|
 s.name             = "ZTVendorManager"
-s.version          = "1.0.3"
+s.version          = "1.0.4"
 s.summary          = "QQ,微信,微博分享&登录；微信支付，支付宝支付 只需一行代码。"
 s.description      = <<-DESC
 QQ,微信,微博分享&登录；微信支付，支付宝支付,只需一行代码。
@@ -21,8 +21,8 @@ s.requires_arc = true
 
 s.source_files = 'ZTVendorManager/**/*.{h,m}'
 
-
-s.compiler_flags    = '-ObjC'
+#s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
+#s.compiler_flags    = '-ObjC'
 s.libraries         = 'c++', 'sqlite3', 'z'
 s.frameworks        = 'CoreTelephony', 'CoreMotion'
 s.vendored_libraries    = 'ZTVendorManager/VendorSDK/UMSocial/UMSocialSDKPlugin/libUMSocialLog.a', 'ZTVendorManager/VendorSDK/QQ/libSocialQQ.a', 'ZTVendorManager/VendorSDK/Sina/libSocialSina.a', 'ZTVendorManager/VendorSDK/WeChat/libSocialWeChat.a', 'ZTVendorManager/VendorSDK/WeChat/WechatSDK/libWeChatSDK.a'
