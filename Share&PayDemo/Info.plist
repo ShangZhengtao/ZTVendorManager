@@ -82,10 +82,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>cc.mytee.iphone</string>
+			<string>alipay</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>cc.mytee.iphone</string>
+				<string>tao.SharePayDemo</string>
 			</array>
 		</dict>
 	</array>
