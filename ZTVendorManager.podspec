@@ -2,7 +2,7 @@
 #https://guides.cocoapods.org/syntax/podspec.html#specification
 Pod::Spec.new do |s|
 s.name             = "ZTVendorManager"
-s.version          = "1.0.4"
+s.version          = "1.0.5"
 s.summary          = "QQ,微信,微博分享&登录；微信支付，支付宝支付 只需一行代码。"
 s.description      = <<-DESC
 QQ,微信,微博分享&登录；微信支付，支付宝支付,只需一行代码。
