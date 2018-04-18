@@ -15,7 +15,7 @@
 
 @implementation NSObject (AppDelegate)
 
-+ (void)load{
++ (void)load {
     Class appDelegate = NSClassFromString(@"AppDelegate");
     if (appDelegate == nil) {
         NSLog(@" AppDelegate Not Found , ZTVendorManager unavailable !");
@@ -25,7 +25,7 @@
     [self swizzleMethod:appDelegate originmethod:@selector(application:openURL:sourceApplication:annotation:) newMethod:@selector(myApplication:openURL:sourceApplication:annotation:)];
 }
 
-+ (void)swizzleMethod:(Class)targetClass originmethod:(SEL) origin newMethod:(SEL) new{
++ (void)swizzleMethod:(Class)targetClass originmethod:(SEL) origin newMethod:(SEL) new {
     //获取用户AppDelegate中自己实现的方法
     Method originMethod =  class_getInstanceMethod(targetClass, origin);
     Method newMethod    =  class_getInstanceMethod([self class], new);
@@ -54,13 +54,14 @@
             NSLog(@"result = %@",resultDic);
         }];
     }
+    //分享回调
+    BOOL shareResult = [[UMSocialManager defaultManager] handleOpenURL:url sourceApplication:sourceApplication annotation:annotation];
+    //微信支付
+    BOOL wechatResult = [WXApi handleOpenURL:url delegate:[ZTWXApiManager sharedManager]];
+    //其他SDK的回调
+    BOOL other = [self myApplication:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     
-    BOOL result = [[UMSocialManager defaultManager] handleOpenURL:url sourceApplication:sourceApplication annotation:annotation];
-    if (!result) {
-        // 其他SDK的回调
-        return [self myApplication:application openURL:url sourceApplication:sourceApplication annotation:annotation];
-    }
-    return result;
+    return wechatResult || shareResult || other;;
 }
 
 // NOTE: 9.0以后使用新API接口
@@ -77,10 +78,10 @@
     //分享回调
     BOOL shareResult = [[UMSocialManager defaultManager] handleOpenURL:url options:options];
     //微信
-    BOOL wecharResult = [WXApi handleOpenURL:url delegate:[ZTWXApiManager sharedManager]];
+    BOOL wechatResult = [WXApi handleOpenURL:url delegate:[ZTWXApiManager sharedManager]];
     //其他SDK的回调
     BOOL other = [self myApplication:app openURL:url options:options];
-    return  wecharResult || shareResult || other;
+    return  wechatResult || shareResult || other;
 }
 
 @end

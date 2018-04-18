@@ -10,8 +10,7 @@
 
 FOUNDATION_EXTERN const NSNotificationName  kAlipayResultNotification;
 
-typedef NS_ENUM(NSInteger,ZTVendorPayMethod)
-{
+typedef NS_ENUM(NSInteger,ZTVendorPayMethod) {
     ZTVendorPayMethodAliPay     = 0,
     ZTVendorPayMethodWechatPay  = 1
 };

@@ -23,9 +23,7 @@ const NSNotificationName kAlipayResultNotification = @"kAlipayResultNotification
 
 @implementation ZTVendorPayManager
 
-
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         [self commonInit];
@@ -36,7 +34,6 @@ const NSNotificationName kAlipayResultNotification = @"kAlipayResultNotification
 -(void)commonInit {
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(alipayOrderProcessOrder:) name:kAlipayResultNotification object:nil];
 }
-
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kAlipayResultNotification object:nil];
@@ -111,7 +108,7 @@ const NSNotificationName kAlipayResultNotification = @"kAlipayResultNotification
             error = [[NSError alloc]initWithDomain:NSCocoaErrorDomain code: code.integerValue  userInfo:userInfo];
         }
     }
-    !_payResultBlock ?: _payResultBlock(success,error);
+    !self.payResultBlock ?: self.payResultBlock(success,error);
     [self payCallbackState:success];
 }
 

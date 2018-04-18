@@ -85,10 +85,8 @@ completionHandler:(ZTVendorShareBlock)handler {
     }];
 }
 
-
 //获取当前屏幕显示的viewcontroller
-+ (UIViewController *)getCurrentVC
-{
++ (UIViewController *)getCurrentVC {
     UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
     
     UIViewController *currentVC = [self getCurrentVCFrom:rootViewController];
